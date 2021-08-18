@@ -73,7 +73,6 @@ while player == False:
 
     player = input("Would you like to play again, 1 for Yes or 2 for No? ")
     if player == "1":
-        print("Good luck.")
         player = False
         computer = options[randint(0, 2)]
     
