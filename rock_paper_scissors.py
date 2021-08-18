@@ -2,7 +2,6 @@
 
 # Pseudocode
 
-
 # 0. The list of options is comprised of Rock, Paper, and Scissors.
 # 1. The computer is assigned one random option from the list: Rock, Paper, and Scissors while the player is out of the game.
 # 2. The player is asked to choose one specific option from the list: Rock, Paper, and Scissors.
