@@ -44,12 +44,18 @@ def start_game(): # 0.
                 number_of_attempts.append(attempts)
                 print("It took you {} attempts to find the number.".format(attempts))
                 play_again_question = input("Would you like to play again? (Enter Yes / No) ")
-                attempts = 0
-                show_score()
-                generate_random_number = randint(1, 10)
+                
+                if play_again_question == "yes":
+                    attempts = 0
+                    show_score()
+                    generate_random_number = randint(1, 10)
 
-                if play_again_question.lower() == "no":
+                elif play_again_question.lower() == "no":
                     print("Have a nice day!")
+                    break
+
+                else:
+                    print("Invalid entry. Have a nice day.")
                     break
 
             elif guessed_number > generate_random_number:
